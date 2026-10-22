@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "name": "QR-ATT",
+    "slug": "qr-att",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#060a18",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.qratt.app"
+    },
+    "android": {
+      "package": "com.qratt.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#060a18"
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "QR-ATT needs the camera to scan event QR codes."
+        }
+      ],
+      "expo-font",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#060a18"
+        }
+      ]
+    ],
+    "owner": "nibertys-team",
+    "extra": {
+      "eas": {
+        "projectId": "4915d2b1-3ad6-40eb-b75e-46587b005af7"
+      }
+    }
+  }
+}
